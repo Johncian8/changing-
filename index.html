@@ -1,0 +1,40 @@
+<html>
+<head>
+  <style>
+    
+    h1{
+        
+        transition: all 1s ease-in-out;
+    }
+    
+  </style>
+  <title>Not click bait</title>
+</head>
+<body>
+    
+    <h1>Hello World</h1>
+    
+    <input type="text">
+ 
+<script>
+    
+    let input = document.querySelector('input');
+    
+    input.oninput = ()=>{
+        
+        let h1 = document.querySelector('h1');
+        
+        h1.style = input.value;
+    }
+    
+    window.oncontextmenu = (e)=>{
+        
+        window.alert("inspect is not allowed");
+        
+        e.preventDefault();
+    }
+    
+</script>
+
+</body>
+</html>
